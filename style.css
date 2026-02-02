@@ -33,6 +33,12 @@ body {
     animation: wordAppear 1.2s ease-in-out forwards;
 }
 
+.word.animate.first {
+    opacity: 1 !important;
+    animation: none !important;
+    filter: blur(0px) !important;
+}
+
 .word.fade-out {
     animation: wordDisappear 1.2s ease-in-out forwards;
 }
