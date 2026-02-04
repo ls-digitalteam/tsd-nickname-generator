@@ -13,11 +13,12 @@ body {
 
 .morphing {
     position: relative;
-    font-size: 100px;
+    font-size: clamp(50px, 5vw, 120px);
     background-color: #f3ead4;
     color: #242f2f;
     min-height: 100vh;
     filter: blur(0px);
+    overflow: hidden;
 }
 
 .word {
@@ -27,6 +28,11 @@ body {
     transform: translate(-50%, -50%);
     filter: blur(0px);
     opacity: 0;
+    line-height: 1;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+    padding: 1rem;
 }
 
 .word.animate {
