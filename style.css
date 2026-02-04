@@ -1,4 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Grenze:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@font-face {
+    font-family: 'Zamorand';
+    src: url('font/Zamorand-drEyX.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 
 *, *:before, *:after {
     margin: 0 auto;
@@ -7,14 +12,17 @@
 }
 
 body {
-    font-family: "Grenze", serif;
-    font-weight: 900;
+    font-family: "Zamorand", serif;
+    font-weight: 400;
 }
 
 .morphing {
     position: relative;
     font-size: clamp(50px, 5vw, 120px);
-    background-color: #f3ead4;
+    background-image: url('images/texturedonepage.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     color: #242f2f;
     min-height: 100vh;
     filter: blur(0px);
@@ -55,8 +63,8 @@ body {
     left: 50%;
     transform: translateX(-50%);
     padding: 15px 30px;
-    font-family: "Grenze", serif;
-    font-weight: 700;
+    font-family: "Zamorand", serif;
+    font-weight: normal;
     font-size: 18px;
     background-color: #242f2f;
     color: #f3ead4;
@@ -67,6 +75,8 @@ body {
     z-index: 10;
     width: 100%;
     max-width: 300px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .generate-btn:hover {
