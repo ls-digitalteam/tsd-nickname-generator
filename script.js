@@ -8,8 +8,13 @@ words[currentIndex].classList.add('animate');
 generateBtn.addEventListener('click', () => {
     const previousIndex = currentIndex;
     
-    // Move to next word
-    currentIndex = (currentIndex + 1) % words.length;
+    // Pick a random index that's different from current
+    let newIndex;
+    do {
+        newIndex = Math.floor(Math.random() * words.length);
+    } while (newIndex === currentIndex && words.length > 1);
+    
+    currentIndex = newIndex;
     
     // Fade out previous word
     words[previousIndex].classList.remove('animate');
