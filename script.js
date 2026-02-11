@@ -1,8 +1,10 @@
 const generateBtn = document.getElementById('generateBtn');
 const words = document.querySelectorAll('.word');
-let currentIndex = 0;
 
-// Show first word on page load
+// Pick a random starting nickname
+let currentIndex = Math.floor(Math.random() * words.length);
+
+// Show random word on page load
 words[currentIndex].classList.add('animate');
 
 generateBtn.addEventListener('click', () => {
